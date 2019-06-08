@@ -1,0 +1,184 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#app{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.main-view{
+    width: 70%;
+    margin: auto;
+}
+
+/*header section*/
+.bg{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/smoothie.jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper-text{
+    position: relative;
+    text-align: center;
+    text-align: -webkit-center;
+    top: 30%;
+
+}
+
+.wrapper-text h1{
+    font-family: 'Sofia';
+    mso-ascii-font-family: 'Sofia';
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-block-start: 0;
+}
+
+.wrapper-text h2{
+    width: 50%;
+    font-family: 'Gruppo';
+    mso-ascii-font-family: 'Gruppo';
+    font-size: 0.9vw;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+
+}
+
+.wrapper-text button{
+    width: 15%;
+    height: 50px;
+    background-color: rgba(255,255,255, 0.4);
+    border: solid black 2px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Gruppo';
+    mso-ascii-font-family: 'Gruppo';
+    font-size: 15px;
+    font-weight: bold;
+    mso-ansi-font-weight: bold;
+    transition: all 0.4s;
+
+}
+
+.wrapper-text button:hover{
+    background-color: rgba(255,255,255, 0.7);
+}
+
+/*main section*/
+.about{
+    width: 100%;
+
+}
+.wrapper-about{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    background-color: white;
+    z-index: 11;
+}
+
+.about-row{
+    width: 100%;
+    display: flex;
+
+}
+.about-item{
+    width: 50%;
+}
+#first-item, #fourth-item{
+    text-align: center;
+    font-family: 'Sofia';
+    /*text-shadow: 2px 2px 4px #FFFFFF;*/
+    font-size: 2vw;
+    padding-top: 10%;
+
+}
+#second-item{
+    position: relative;
+    border-top: solid 1px #646568;
+    border-right: solid 1px #646568;
+
+}
+
+#third-item{
+    border-bottom: solid 1px #646568;
+    border-left: solid 1px #646568;
+
+}
+.about-item p{
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Gruppo';
+}
+#first-item h2{
+    background: linear-gradient(to right, #acc979 0%, #64cc14 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#fourth-item h2{
+    background: linear-gradient(to right, #f2e8cd 0%, #f1bc2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#heart-one, #heart-two, #heart-three, #heart-four, #heart-five{
+    width: 4vw;
+    height: 4vw;
+    opacity: 0.1;
+    position: absolute;
+
+}
+
+#heart-one{
+    transform: rotateZ(30deg);
+    top: 5%;
+    left: 15%;
+}
+
+#heart-two{
+    transform: rotateZ(-30deg);
+    top: 25%;
+    left: 55%;
+    width: 6.3vw;
+    height: 6.3vw;
+}
+
+#heart-three{
+    transform: rotateZ(-110deg);
+    top: 75%;
+    left: 65%;
+
+}
+
+#heart-four{
+    transform: rotateZ(100deg);
+    width: 1.3vw;
+    height: 1.3vw;
+    top: 75%;
+    left: 7%;
+
+}
+#heart-five{
+    transform: rotateZ(-220deg);
+    width: 1.4vw;
+    height: 1.4vw;
+    top: 85%;
+    left: 17%;
+
+}
