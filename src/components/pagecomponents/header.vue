@@ -1,5 +1,5 @@
 <template>
-    <div class="bg">
+    <section class="bg">
         <div class="wrapper-text main-view">
             <h1 class="text">{{text}}</h1>
             <h2>
@@ -10,7 +10,7 @@
             <button>Discover</button>
         </div>
 
-    </div>
+    </section>
 </template>
 
 <script>

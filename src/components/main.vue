@@ -1,38 +1,34 @@
 <template>
 
-    <section class="about">
-        <div class="main-view wrapper-about">
-            <div class="about-row">
-                <div class="about-item" id="first-item">
-                    <p>Smoothie</p>
-                    <p>is</p>
-                    <h2>HEALTHY</h2>
-                </div>
-                <div class="about-item" id="second-item">
-                    <img src="../img/heart.png" id="heart-one">
-                    <img src="../img/heart.png" id="heart-two">
-                    <img src="../img/heart.png" id="heart-three">
-                    <img src="../img/heart.png" id="heart-four">
-                    <img src="../img/heart.png" id="heart-five">
-                </div>
-            </div>
-            <div class="about-row">
-                <div class="about-item" id="third-item"></div>
-                <div class="about-item" id="fourth-item">
-                    <p>Smoothie</p>
-                    <p>is</p>
-                    <h2>Delicious</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+   <div>
+      <mainabout :scroll="scroll"></mainabout>
+      <mainmakeit :scroll="scroll"></mainmakeit>
+      <maincontext></maincontext>
+   </div>
+
 
 
 </template>
 
 <script>
+
+    import mainabout from './pagecomponents/mainabout'
+    import mainmakeit from './pagecomponents/mainmakeitcount'
+    import maincontext from './pagecomponents/maincontext'
     export default {
-        name: "main"
+        name: "main",
+        components: {
+           mainabout,
+           mainmakeit,
+           maincontext
+
+        },
+       data(){
+           return{
+
+           }
+       },
+       props:['scroll']
     }
 </script>
 

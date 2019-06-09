@@ -2,7 +2,7 @@
     <div id="app">
 
         <myheader/>
-        <router-view/>
+        <router-view :scroll="scroll" />
     </div>
 </template>
 
@@ -11,7 +11,19 @@
     import myheader from './components/pagecomponents/header';
     export default {
         name: 'App',
-        components: {myheader}
+        components: {myheader},
+        data(){
+            return {
+                scroll: 0
+            }
+        },
+        created() {
+            window.addEventListener('scroll', () =>{
+
+                this.scroll = window.pageYOffset
+
+            })
+        }
 
     }
 </script>
