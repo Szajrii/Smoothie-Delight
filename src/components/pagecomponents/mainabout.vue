@@ -52,7 +52,7 @@
         watch:{
             scroll(){
                 let aboutOffset = document.getElementById('about').offsetTop;
-                if(this.scroll >= aboutOffset - (0.1 * aboutOffset) ){
+                if(this.scroll >= aboutOffset - (0.3 * aboutOffset) ){
                         this.anim = true;
                 }
             }

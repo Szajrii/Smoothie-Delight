@@ -47,7 +47,7 @@
 
 <style scoped>
     .iCountUp {
-        font-size: 6vw;
+        font-size: 5vw;
         margin: 0;
         color: #dead47;
         text-shadow: 2px 2px 4px #000000;

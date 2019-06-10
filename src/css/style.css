@@ -37,7 +37,7 @@ html, body{
 .wrapper-text h1{
     font-family: 'Sofia';
     mso-ascii-font-family: 'Sofia';
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: white;
     text-shadow: 2px 2px 4px #000000;
     margin-block-start: 0;
@@ -47,8 +47,9 @@ html, body{
     width: 50%;
     font-family: 'Gruppo';
     mso-ascii-font-family: 'Gruppo';
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     color: white;
+
     text-shadow: 2px 2px 4px #000000;
 
 
@@ -67,7 +68,7 @@ html, body{
     font-size: 1.5vw;
     font-weight: bold;
     mso-ansi-font-weight: bold;
-    transition: all 0.4s;
+    transition: background-color 0.4s;
 
 }
 
@@ -258,7 +259,7 @@ html, body{
 }
 
 .wrapper-makeit i{
-    font-size: 6vw;
+    font-size: 5vw;
     color: #dead47;
     text-shadow: 2px 2px 4px #000000;
 
@@ -383,7 +384,114 @@ html, body{
     width: 65%;
     height: 3.5vw;
     border: none;
+    border-radius: 10px;
     background-color: #95ba36;
     opacity: 0.7;
     cursor: pointer;
+}
+
+/*stay alert section*/
+
+.stay-alert{
+
+    width: 100%;
+    height: 15vw;
+    background-color: rgba(222, 173, 71, 0.37);
+    margin-top: 95%;
+
+}
+.stay-alert .main-view{
+    transition: transform 1s;
+}
+
+.wrapper-stay-alert-hidden{
+    transform: translateX(-100vw);
+}
+.wrapper-stay-alert{
+    display: flex;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Gruppo';
+    font-weight: bolder;
+    transform: translateX(0);
+}
+.wrapper-stay-alert p{
+    font-size: 2.2vw;
+
+}
+.wrapper-stay-alert h1{
+    font-size: 2.5vw;
+
+}
+
+.wrapper-stay-alert img{
+    width: 35vw;
+    height: 35vw;
+    padding-left: 8%;
+    transform: translateY(-12vw);
+}
+
+/*newsletter section*/
+.newsletter{
+
+    width: 100%;
+    height: 40vw;
+    background-image: url("../img/smoothie-newsl.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-attachment: fixed;
+}
+
+.wrapper-newsletter{
+    font-family: 'Gruppo';
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.wrapper-newsletter h2{
+     font-size: 2.5vw;
+ }
+.wrapper-newsletter h1{
+    font-size: 3vw;
+}
+
+.wrapper-newsletter input{
+    margin-top: 2%;
+    background-color: rgba(0,0,0, 0.4);
+    border: solid 2px white;
+    border-radius: 30px;
+    height: 3vw;
+    width: 70%;
+    font-family: 'Gruppo';
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.5vw;
+    padding-left: 5px;
+}
+
+#newsletter-input-two{
+    width: 35%;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgba(0,0,0, 0.6);
+    transition: background-color 0.2s;
+    margin-top: 5%;
+}
+#newsletter-input-two:hover{
+    background-color: rgba(0,0,0, 0.8);
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    color: #dead47;
+    font-family: 'Gruppo';
+    font-size: 20px;
+    background-color: rgba(18, 17, 15, 0.87);
 }

@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="main-view makeit-text">
-            <p>Every </p> <span> Smoothie </span> <p> is an experience.</p>
+            <p>Every </p><span>Smoothie </span><p>is an experience.</p>
             <h1>MAKE IT COUNT!</h1>
         </div>
     </section>
