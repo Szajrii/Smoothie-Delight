@@ -259,21 +259,21 @@ html, body{
 }
 
 .wrapper-makeit i{
-    font-size: 5vw;
+    font-size: 4vw;
     color: #dead47;
     text-shadow: 2px 2px 4px #000000;
 
 }
 
 .makeit-item{
-    padding-top: 10%;
+    padding-top: 8%;
     width: 50%;
     align-items: center;
     text-align: center;
 }
 
 .makeit-item h2{
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     color: #dead47;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Gruppo';
@@ -283,7 +283,7 @@ html, body{
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Gruppo';
     padding-top: 4%;
-    padding-bottom: 6%;
+    padding-bottom: 5%;
     color: #dead47;
     text-align: center;
     align-items: center;
@@ -291,16 +291,16 @@ html, body{
 
 .makeit-text p {
     display: inline;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .makeit-text span {
     font-family: 'Sofia';
-    font-size: 4vw;
+    font-size: 3.4vw;
 }
 
 .makeit-text h1 {
-    font-size: 5vw;
+    font-size: 4.3vw;
 
 }
 
@@ -438,7 +438,7 @@ html, body{
     height: 40vw;
     background-image: url("../img/smoothie-newsl.jpg");
     background-repeat: no-repeat;
-    background-position:50% 50%;
+    background-position:50% 60%;
     background-attachment: fixed;
 }
 
@@ -473,13 +473,16 @@ html, body{
 }
 
 #newsletter-input-two{
-    width: 35%;
+    width: 30%;
     border-radius: 15px;
     cursor: pointer;
     background-color: rgba(0,0,0, 0.6);
     transition: background-color 0.2s;
     margin-top: 5%;
 }
+
+
+
 #newsletter-input-two:hover{
     background-color: rgba(0,0,0, 0.8);
 }
@@ -488,10 +491,61 @@ html, body{
 
 .footer{
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 65px;
+    line-height: 65px;
     color: #dead47;
     font-family: 'Gruppo';
     font-size: 20px;
-    background-color: rgba(18, 17, 15, 0.87);
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+/*nav menu*/
+
+.nav {
+    width: 100%;
+    height:65px;
+    line-height: 65px;
+    background-color: rgba(236, 181, 65, 0.99);
+    color: black;
+    /*position: fixed;*/
+    z-index: 50;
+    font-family: 'Gruppo';
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+.wrapper-nav{
+     display: flex;
+     justify-content: space-between;
+ }
+
+.wrapper-nav li{
+    display: inline;
+    padding-right: 0.9vw;
+}
+a:link, a:visited, a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.mylogo{
+    font-family: 'Sofia';
+    font-size: 1.7vw;
+}
+
+.arrowup{
+    color: black;
+    cursor: pointer;
+    font-size: 4vw;
+    position: fixed;
+    top: 82%;
+    left: 92%;
+    z-index: 50;
+    
+}
+
+.arrow-enter-active, .arrow-leave-active {
+    transition: opacity .5s;
+}
+.arrow-enter, .arrow-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
 }

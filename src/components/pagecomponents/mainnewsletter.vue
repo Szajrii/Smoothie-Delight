@@ -4,7 +4,7 @@
             <h2>Want to hear about news?</h2>
             <h1>Sign up for newsletter NOW!</h1>
             <form action="">
-                <input type="email" pattern=".+@globex.com">
+                <input type="email" required pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*">
                 <input type="submit" id="newsletter-input-two" value="Sign Up!">
             </form>
 

@@ -6,7 +6,11 @@
       <maincontext></maincontext>
       <mainstayalert :scroll="scroll"></mainstayalert>
       <mainnewsletter :scroll="scroll"></mainnewsletter>
-      <myfooter></myfooter>
+      <transition name="arrow">
+         <i class="fas fa-arrow-circle-up arrowup" v-show="scroll > 300"></i>
+      </transition>
+
+
    </div>
 
 
@@ -21,6 +25,7 @@
     import mainstayalert from './pagecomponents/mainstayalert'
     import mainnewsletter from './pagecomponents/mainnewsletter'
     import myfooter from './pagecomponents/myfooter'
+
     export default {
         name: "main",
         components: {
@@ -29,7 +34,8 @@
            maincontext,
            mainstayalert,
            mainnewsletter,
-           myfooter
+           myfooter,
+
         },
        data(){
            return{
