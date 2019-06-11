@@ -7,8 +7,9 @@
       <mainstayalert :scroll="scroll"></mainstayalert>
       <mainnewsletter :scroll="scroll"></mainnewsletter>
       <transition name="arrow">
-         <i class="fas fa-arrow-circle-up arrowup" v-show="scroll > 300"></i>
+         <i class="fas fa-arrow-circle-up arrowup" v-show="scroll > 300" @click="scrollTop"> </i>
       </transition>
+
 
 
    </div>
@@ -26,6 +27,8 @@
     import mainnewsletter from './pagecomponents/mainnewsletter'
     import myfooter from './pagecomponents/myfooter'
 
+
+
     export default {
         name: "main",
         components: {
@@ -42,7 +45,13 @@
 
            }
        },
-       props:['scroll']
+       props:['scroll'],
+       methods:{
+           scrollTop(){
+              window.scrollTo(0, 0)
+           }
+
+       }
     }
 </script>
 

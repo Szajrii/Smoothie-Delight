@@ -1,5 +1,5 @@
 <template>
-    <section class="nav">
+    <section class="nav" id="nav">
         <div class="wrapper-nav main-view">
 
             <div class="mylogo">

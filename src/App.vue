@@ -12,6 +12,7 @@
     import myheader from './components/pagecomponents/header';
     import mynav from './components/pagecomponents/mynav'
     import myfooter from './components/pagecomponents/myfooter'
+
     export default {
         name: 'App',
         components:

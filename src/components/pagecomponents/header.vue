@@ -7,7 +7,7 @@
                 dolores doloribus enim error expedita ipsam molestias numquam officia officiis,
                 placeat quo repellat repellendus soluta? Porro?
             </h2>
-            <button>Discover</button>
+            <button @click="discover">Discover</button>
         </div>
 
     </section>
@@ -19,6 +19,16 @@
         data(){
             return{
                 text: 'Smoothie Delight'
+            }
+        },
+        methods:{
+            discover(){
+
+                if($vm0.$route.path == '/'){
+                    let about = document.getElementById('about').offsetTop;
+                    window.scrollTo(0, about)
+                }
+
             }
         }
     }

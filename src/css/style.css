@@ -2,11 +2,16 @@ html, body{
     width: 100%;
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
+}
+html{
+
 }
 #app{
     width: 100%;
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 .main-view{
     width: 70%;
@@ -21,7 +26,6 @@ html, body{
     background-image: url('../img/smoothie.jpg');
     background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
 }
@@ -548,4 +552,57 @@ a:link, a:visited, a:active{
 }
 .arrow-enter, .arrow-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
+}
+
+/*contact section*/
+
+.contact{
+    height: 37vw;
+
+}
+.wrapper-form{
+    background-color: rgba(18, 17, 15, 0.85);
+    width: 50%;
+    height: 90%;
+    margin-top: 3%;
+    color: #ECB541;
+    font-family: 'Gruppo';
+    border-radius: 10px;
+}
+
+.wrapper-form input, .wrapper-form textarea{
+    display: block;
+    background-color: rgba(255,255,255, 1);
+    border: none;
+    border: 2px solid #ECB541;
+    border-radius: 15px;
+    width: 70%;
+    height: 3.5vw;
+    margin: auto;
+    margin-top: 3%;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+
+}
+
+.wrapper-form p {
+    width: 70%;
+    padding-top: 3%;
+    margin: auto;
+    font-size: 1.2vw;
+}
+.wrapper-form textarea{
+    height: 10vw;
+    border-radius: 5px;
+}
+
+#contact-submit{
+    background-color: rgba(18, 17, 15, 0);
+    color: #ecb541;
+    cursor: pointer;
+    margin-top: 4%;
+    width: 30%;
+    border: 1px solid #ECB541;
+    border-image-source: linear-gradient(45deg, rgb(242, 235, 191), rgb(236,181,65));
+    border-image-slice: 1;
 }
