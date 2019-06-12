@@ -3,7 +3,7 @@
         <div class="wrapper-nav main-view">
 
             <div class="mylogo">
-                <router-link to="/">Smoothe Deilght</router-link>
+                <router-link to="/">Smoothie Delight</router-link>
             </div>
 
             <div>

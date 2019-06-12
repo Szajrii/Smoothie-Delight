@@ -25,10 +25,8 @@
         methods:{
             discover(){
 
-                if($vm0.$route.path == '/'){
                     let about = document.getElementById('about').offsetTop;
                     window.scrollTo(0, about)
-                }
 
             }
         }

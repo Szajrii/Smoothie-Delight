@@ -1,6 +1,6 @@
 <template>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="wrapper-form main-view">
             <form action="">
                 <p>Do you have any question? Leave a message</p>
@@ -16,7 +16,13 @@
 
 <script>
     export default {
-        name: "contact"
+        name: "contact",
+        created() {
+            setTimeout(() => {
+                window.scrollTo(0, document.getElementById('contact').offsetTop )
+            }, 300)
+
+        }
     }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-    <section class="makeitcout" id="makeitcout">
+    <section class="makeitcount" id="makeitcout">
         <div class="wrapper-makeit main-view">
             <div class="makeit-item">
                 <i class="fas fa-smile-wink"></i>

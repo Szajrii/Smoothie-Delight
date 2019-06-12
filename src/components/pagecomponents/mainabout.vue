@@ -56,6 +56,11 @@
                         this.anim = true;
                 }
             }
+        },
+        created() {
+            if(window.screen.width <= 600){
+                this.anim = true
+            }
         }
     }
 </script>

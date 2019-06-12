@@ -1,5 +1,5 @@
 <template>
-    <section class="shop">
+    <section class="shop" id="shop">
         <div class="wrapper-shop">
             <div class="shop-details">
                 <p>Choose your favourite taste:</p>
@@ -13,7 +13,7 @@
                     {{amount}}
                     <i class="fas fa-plus" @click="amount ++"></i>
                     <div class="line"></div>
-                    <p>Total: {{ total }}</p>
+                    <p>Total price: {{ total }}</p>
                 </div>
                 <div class="shop-order" v-if="amount > 0">
                     <button>Order</button>
@@ -70,6 +70,12 @@
             amount(){
                 this.total = 0.5 * this.amount;
             }
+        },
+        created() {
+            setTimeout(() => {
+                window.scrollTo(0, document.getElementById('shop').offsetTop )
+            }, 300)
+
         }
     }
 </script>

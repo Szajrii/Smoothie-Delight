@@ -1,5 +1,5 @@
 <template>
-    <section class="blog">
+    <section class="blog" id="blog">
         <blogitem ></blogitem>
         <blogitem ></blogitem>
 <!--        You can add multiple blog items and configurate by your own-->
@@ -13,6 +13,12 @@
         name: "blog",
         components:{
             blogitem
+        },
+        created() {
+            setTimeout(() => {
+                window.scrollTo(0, document.getElementById('blog').offsetTop )
+            }, 300)
+
         }
     }
 </script>
