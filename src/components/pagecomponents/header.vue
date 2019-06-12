@@ -7,7 +7,7 @@
                 dolores doloribus enim error expedita ipsam molestias numquam officia officiis,
                 placeat quo repellat repellendus soluta? Porro?
             </h2>
-            <button @click="discover">Discover</button>
+            <button @click="discover" v-if="view == 'main'">Discover</button>
         </div>
 
     </section>
@@ -21,6 +21,7 @@
                 text: 'Smoothie Delight'
             }
         },
+        props:['view'],
         methods:{
             discover(){
 

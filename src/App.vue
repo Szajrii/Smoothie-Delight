@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <mynav></mynav>
-        <myheader/>
-        <router-view :scroll="scroll" />
+        <myheader :view="view"/>
+        <router-view :scroll="scroll" @changeview="changeview"/>
         <myfooter></myfooter>
     </div>
 </template>
@@ -23,7 +23,13 @@
             },
         data(){
             return {
-                scroll: 0
+                scroll: 0,
+                view: ''
+            }
+        },
+        methods:{
+            changeview(view){
+                this.view = view
             }
         },
         created() {

@@ -42,7 +42,7 @@
         },
        data(){
            return{
-
+               currentView: ''
            }
        },
        props:['scroll'],
@@ -51,6 +51,14 @@
               window.scrollTo(0, 0)
            }
 
+       },
+       created() {
+           this.currentView = 'main';
+           this.$emit('changeview', this.currentView);
+       },
+       destroyed() {
+          this.currentView = '';
+          this.$emit('changeview', this.currentView);
        }
     }
 </script>

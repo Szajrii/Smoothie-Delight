@@ -60,7 +60,7 @@ html{
 }
 
 .wrapper-text button{
-    width: 15%;
+    width: 25%;
     height: 50px;
     background-color: rgba(255,255,255, 0.4);
     border: solid black 2px;
@@ -475,6 +475,9 @@ html{
     font-size: 1.5vw;
     padding-left: 5px;
 }
+#newsletter-input-one{
+    padding-left: 2vw;
+}
 
 #newsletter-input-two{
     width: 30%;
@@ -557,7 +560,7 @@ a:link, a:visited, a:active{
 /*contact section*/
 
 .contact{
-    height: 37vw;
+    height: 40vw;
 
 }
 .wrapper-form{
@@ -568,6 +571,7 @@ a:link, a:visited, a:active{
     color: #ECB541;
     font-family: 'Gruppo';
     border-radius: 10px;
+    border: 1px solid #ECB541;
 }
 
 .wrapper-form input, .wrapper-form textarea{
@@ -605,4 +609,120 @@ a:link, a:visited, a:active{
     border: 1px solid #ECB541;
     border-image-source: linear-gradient(45deg, rgb(242, 235, 191), rgb(236,181,65));
     border-image-slice: 1;
+}
+/*shop section*/
+
+.shop{
+    padding-bottom: 9vw;
+}
+
+.wrapper-shop{
+    width: 40%;
+    margin: auto;
+    padding-top: 4vw;
+    font-family: 'Gruppo';
+    text-align: left;
+    font-weight: bolder;
+
+}
+
+.shop-details p{
+   text-align: center;
+}
+
+.shop-taste{
+    padding-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+
+}
+
+.shop-taste div{
+    width: 30%;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.taste-selected {
+    background-color: rgba(156, 156, 156, 0.56);
+}
+
+.shop-amount{
+    padding-top: 10%;
+    width: 50%;
+    text-align: left ;
+    font-size: 2.5vw;
+}
+
+.shop-amount p {
+    text-align: left;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.shop-amount i{
+    font-size: 2.5vw;
+    padding-left: 1%;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+.line{
+    border-bottom: 2px solid black;
+    width: 50%;
+    height: 20px;
+}
+
+.minus-disabled{
+    opacity: 0.3;
+    cursor: not-allowed !important;
+}
+
+.shop-order {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.shop-order button{
+    font-family: 'Gruppo';
+    background-color: white;
+    border: 1px solid black;
+    width: 80%;
+    font-size: 1.4vw;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.blog{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-family: 'Gruppo';
+}
+.blog-item{
+    width: 30%;
+    margin: 1.5vw auto;
+    padding: 1.2vw 2vw;
+    /*margin: auto;*/
+    background-color: white;
+    -webkit-box-shadow: 3px -1px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -1px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 3px -1px 20px -10px rgba(0,0,0,0.75);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blog-item p{
+    font-size: 1.5vw;
+}
+.blog-item h3{
+    font-size: 1.7vw;
+}
+.blog-item a{
+    font-size: 1.3vw;
+    font-weight: bolder;
+    cursor: pointer;
 }

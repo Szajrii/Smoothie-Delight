@@ -3,7 +3,7 @@
     <section class="contact">
         <div class="wrapper-form main-view">
             <form action="">
-                <p>Do you have any questions? Leave a message</p>
+                <p>Do you have any question? Leave a message</p>
                 <input type="email" placeholder="Email" required>
                 <input type="text" placeholder="Topic" required>
                 <textarea placeholder="Your message" required ></textarea>
